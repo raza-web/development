@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div><br>
+                    <div>
+                        <label>EMP Code</label>
+                        <input type="text" name="empCode" id="empCode">
+                    </div><br>
+                    <div>
+                        <label>Salary</label>
+                        <input type="text" name="salary" id="salary">
+                    </div><br>
+                    <div>
+                        <label>City</label>
+                        <input type="text" name="city" id="city">
+                    </div><br>
+                    <div  class="form-action-buttons">
+                        <center><input type="submit" value="Submit"></center>
+                    </div>
+                </form>
+            </td>
+            <td>
+                <center><table class="list" id="employeeList"></center>
+                    <thead>
+                        <tr>
+                            <th>Full Name</th><br>
+                            <th>EMP Code</th><br>
+                            <th>Salary</th><br>
+                            <th>City</th><br>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
